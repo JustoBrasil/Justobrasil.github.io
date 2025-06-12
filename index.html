@@ -38,68 +38,66 @@
     }
     .bar-background div {
       flex: 1;
-      background-color: rgba(0, 90, 40, 0.2);
+      background-color: rgba(0, 90, 40, 0.15);
       border-radius: 2px;
     }
     .bar1 { height: 20%; align-self: flex-end; }
-    .bar2 { height: 40%; align-self: flex-end; }
-    .bar3 { height: 60%; align-self: flex-end; }
+    .bar2 { height: 60%; align-self: flex-end; }
+    .bar3 { height: 30%; align-self: flex-end; }
     .bar4 { height: 80%; align-self: flex-end; }
-    .bar5 { height: 50%; align-self: flex-end; }
+    .bar5 { height: 40%; align-self: flex-end; }
     .bar6 { height: 70%; align-self: flex-end; }
-    .bar7 { height: 30%; align-self: flex-end; }
+    .bar7 { height: 50%; align-self: flex-end; }
 
     .container {
       position: relative;
       z-index: 1;
       display: flex;
-      max-width: 1200px;
+      flex-direction: column;
+      max-width: 800px;
       width: 100%;
       background-color: rgba(0, 70, 30, 0.9);
       border-radius: 12px;
       overflow: hidden;
-    }
-    .left, .right {
-      background-color: rgba(0, 70, 30, 0.9);
-    }
-    .left {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       padding: 2rem;
+      align-items: center;
+      text-align: center;
     }
-    .left img {
-      max-width: 100%;
+
+    .logo {
+      margin-bottom: 1.5rem;
+    }
+
+    .logo img {
+      max-width: 200px;
       height: auto;
     }
-    .right {
-      flex: 2;
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+
     .title-section,
     .cta-section {
       margin-bottom: 1.5rem;
     }
+
     .line {
       border-top: 1px solid white;
       margin: 1rem 0;
     }
+
     .title-section p,
     .main-text {
       font-size: 1.5rem;
       margin-bottom: 1rem;
     }
+
     .main-text {
       font-size: 2rem;
       font-weight: 600;
     }
+
     .cta-button {
       margin-top: 2rem;
     }
+
     .cta-button a {
       background-color: #1877F2;
       color: white;
@@ -111,11 +109,14 @@
       align-items: center;
       gap: 0.5rem;
     }
+
     .social-icons {
       margin-top: 1.5rem;
       display: flex;
       gap: 1rem;
+      justify-content: center;
     }
+
     .social-icons a {
       color: white;
       font-size: 2rem;
@@ -134,30 +135,29 @@
     <div class="bar7"></div>
   </div>
   <div class="container">
-    <div class="left">
-      <img src="logo.png" alt="Justo Brasil Logo"> <!-- Substitua logo.png pela sua imagem -->
+    <div class="logo">
+      <img src="logo.png.png" alt="Justo Brasil Logo">
     </div>
-    <div class="right">
-      <div class="title-section">
-        <p>FOI VÍTIMA DE GOLPE BANCÁRIO OU O BANCO TE COBROU POR ALGO QUE VOCÊ NÃO CONTRATOU?</p>
+    <div class="title-section">
+      <p>FOI VÍTIMA DE GOLPE BANCÁRIO OU O BANCO TE COBROU POR ALGO QUE VOCÊ NÃO CONTRATOU?</p>
+    </div>
+    <div class="line"></div>
+    <div class="main-text">
+      <p>A análise é gratuita, <br> rápida e feita por especialistas.<br>Em poucos minutos você pode <br>transformar seu prejuízo em <br><strong>indenização.</strong></p>
+    </div>
+    <div class="line"></div>
+    <div class="cta-section">
+      <p>Para garantir sua análise gratuita clique no botão abaixo</p>
+      <div class="cta-button">
+        <a href="https://wa.me/11982717635"><i class="fab fa-whatsapp"></i> WhatsApp</a>
       </div>
-      <div class="line"></div>
-      <div class="main-text">
-        <p>A análise é gratuita, <br> rápida e feita por especialistas.<br>Em poucos minutos você pode <br>transformar seu prejuízo em <br><strong>indenização.</strong></p>
-      </div>
-      <div class="line"></div>
-      <div class="cta-section">
-        <p>Para garantir sua análise gratuita clique no botão abaixo</p>
-        <div class="cta-button">
-          <a href="https://wa.me/11982717635"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-        </div>
-        <div class="social-icons">
-          <a href="https://instagram.com/justobrasil_" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://facebook.com/seupagina" target="_blank"><i class="fab fa-facebook"></i></a>
-        </div>
+      <div class="social-icons">
+        <a href="https://instagram.com/justobrasil_" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/Justo-Brasil/61577311678414" target="_blank"><i class="fab fa-facebook"></i></a>
       </div>
     </div>
   </div>
 </body>
 </html>
+
 
