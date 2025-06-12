@@ -1,11 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>JusTo Brasil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justo Brasil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    body {
+      background-color: #0c592c;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      max-width: 200px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.4;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 10px 0 30px;
+    }
+
+    .whatsapp {
+      background-color: #007aff;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .socials {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .socials a {
+      color: white;
+      font-size: 30px;
+      text-decoration: none;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>Bem-vindo à JusTo Brasil</h1>
-  <p>Estamos trabalhando para proteger seus direitos contra fraudes bancárias.</p>
+  <div class="logo">
+    <img src="logo.png" alt="Justo Brasil">
+    <p style="color: #0c592c; font-weight: bold;">Seu prejuízo pode virar indenização</p>
+  </div>
+
+  <h2>FOI VÍTIMA DE GOLPE BANCÁRIO OU O BANCO TE COBROU POR ALGO QUE VOCÊ NÃO CONTRATOU?</h2>
+  <h1>
+    A análise é gratuita, rápida e feita por especialistas.<br>
+    Em poucos minutos você pode transformar seu prejuízo em indenização.
+  </h1>
+  <p>Para garantir sua análise gratuita clique no botão abaixo</p>
+
+  <a href="https://wa.me/seunumero" class="whatsapp">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+
+  <div class="socials">
+    <a href="https://instagram.com/seuusuario" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://facebook.com/seuusuario" target="_blank"><i class="fab fa-facebook"></i></a>
+  </div>
 </body>
 </html>
