@@ -1,108 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Justo Brasil</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Raleway', sans-serif;
+    }
+    body {
+      font-family: 'Lexend', sans-serif;
+      background-color: rgba(0, 70, 30, 0.9);
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
     }
 
-    body {
-      background-color: #0c592c;
-      color: white;
+    /* Gráfico de barras no fundo */
+    .bar-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      z-index: 0;
+      gap: 4px;
+      padding: 2rem;
+    }
+    .bar-background div {
+      flex: 1;
+      background-color: rgba(0, 90, 40, 0.2);
+      border-radius: 2px;
+    }
+    .bar1 { height: 20%; align-self: flex-end; }
+    .bar2 { height: 40%; align-self: flex-end; }
+    .bar3 { height: 60%; align-self: flex-end; }
+    .bar4 { height: 80%; align-self: flex-end; }
+    .bar5 { height: 50%; align-self: flex-end; }
+    .bar6 { height: 70%; align-self: flex-end; }
+    .bar7 { height: 30%; align-self: flex-end; }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      max-width: 1200px;
+      width: 100%;
+      background-color: rgba(0, 70, 30, 0.9);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .left, .right {
+      background-color: rgba(0, 70, 30, 0.9);
+    }
+    .left {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .left img {
+      max-width: 100%;
+      height: auto;
+    }
+    .right {
+      flex: 2;
+      padding: 2rem;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 20px;
     }
-
-    .logo {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
+    .title-section,
+    .cta-section {
+      margin-bottom: 1.5rem;
     }
-
-    .logo img {
-      max-width: 200px;
+    .line {
+      border-top: 1px solid white;
+      margin: 1rem 0;
     }
-
-    h2 {
-      font-size: 18px;
-      font-weight: 400;
-      margin-bottom: 10px;
+    .title-section p,
+    .main-text {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
     }
-
-    h1 {
-      font-size: 28px;
-      font-weight: 700;
-      line-height: 1.4;
-      max-width: 600px;
-      margin: 20px auto;
+    .main-text {
+      font-size: 2rem;
+      font-weight: 600;
     }
-
-    p {
-      font-size: 16px;
-      margin: 10px 0 30px;
+    .cta-button {
+      margin-top: 2rem;
     }
-
-    .whatsapp {
-      background-color: #007aff;
+    .cta-button a {
+      background-color: #1877F2;
       color: white;
-      padding: 12px 24px;
-      border: none;
+      padding: 1rem 2rem;
       border-radius: 8px;
-      font-size: 18px;
       text-decoration: none;
+      font-size: 1.2rem;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 0.5rem;
     }
-
-    .socials {
-      margin-top: 30px;
+    .social-icons {
+      margin-top: 1.5rem;
       display: flex;
-      gap: 20px;
-      justify-content: center;
+      gap: 1rem;
     }
-
-    .socials a {
+    .social-icons a {
       color: white;
-      font-size: 30px;
-      text-decoration: none;
+      font-size: 2rem;
     }
   </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <div class="logo">
-    <img src="logo.png" alt="Justo Brasil">
-    <p style="color: #0c592c; font-weight: bold;">Seu prejuízo pode virar indenização</p>
+  <div class="bar-background">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <div class="bar4"></div>
+    <div class="bar5"></div>
+    <div class="bar6"></div>
+    <div class="bar7"></div>
   </div>
-
-  <h2>FOI VÍTIMA DE GOLPE BANCÁRIO OU O BANCO TE COBROU POR ALGO QUE VOCÊ NÃO CONTRATOU?</h2>
-  <h1>
-    A análise é gratuita, rápida e feita por especialistas.<br>
-    Em poucos minutos você pode transformar seu prejuízo em indenização.
-  </h1>
-  <p>Para garantir sua análise gratuita clique no botão abaixo</p>
-
-  <a href="https://wa.me/seunumero" class="whatsapp">
-    <i class="fab fa-whatsapp"></i> WhatsApp
-  </a>
-
-  <div class="socials">
-    <a href="https://instagram.com/seuusuario" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://facebook.com/seuusuario" target="_blank"><i class="fab fa-facebook"></i></a>
+  <div class="container">
+    <div class="left">
+      <img src="logo.png" alt="Justo Brasil Logo"> <!-- Substitua logo.png pela sua imagem -->
+    </div>
+    <div class="right">
+      <div class="title-section">
+        <p>FOI VÍTIMA DE GOLPE BANCÁRIO OU O BANCO TE COBROU POR ALGO QUE VOCÊ NÃO CONTRATOU?</p>
+      </div>
+      <div class="line"></div>
+      <div class="main-text">
+        <p>A análise é gratuita, <br> rápida e feita por especialistas.<br>Em poucos minutos você pode <br>transformar seu prejuízo em <br><strong>indenização.</strong></p>
+      </div>
+      <div class="line"></div>
+      <div class="cta-section">
+        <p>Para garantir sua análise gratuita clique no botão abaixo</p>
+        <div class="cta-button">
+          <a href="https://wa.me/11982717635"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+        <div class="social-icons">
+          <a href="https://instagram.com/justobrasil_" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/seupagina" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
+
