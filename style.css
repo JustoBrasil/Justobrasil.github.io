@@ -15,16 +15,15 @@
 
 .bar-background .bar {
   width: 6px;
-  background-color: rgba(0, 255, 100, 0.08);
+  background-color: rgba(0, 255, 100, 0.15);
   border-radius: 3px;
   animation: pulseBar 4s ease-in-out infinite;
   animation-delay: calc(var(--i) * 0.1s);
   transform-origin: bottom;
 }
 
-.bar-background .bar:nth-child(n) {
-  --i: 1;
-}
+
+.bar-background .bar:nth-child(1) { --i: 1; height: 35%; }
 .bar-background .bar:nth-child(2) { --i: 2; height: 25%; }
 .bar-background .bar:nth-child(3) { --i: 3; height: 40%; }
 .bar-background .bar:nth-child(4) { --i: 4; height: 30%; }
