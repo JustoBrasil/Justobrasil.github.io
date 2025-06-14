@@ -30,12 +30,10 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-end;
   padding: 2rem;
   z-index: 0;
-  gap: 6px;
   pointer-events: none;
 } 
 
