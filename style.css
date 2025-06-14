@@ -45,12 +45,8 @@ body {
   animation: pulseBar 4s ease-in-out infinite;
   animation-delay: calc(var(--i) * 0.1s);
   transform-origin: bottom;
-}
 
-/* Gera alturas e delays diferentes via CSS */
-.bar-background .bar:nth-child(n) {
-  --i: 1;
-}
+.bar-background .bar:nth-child(1) { --i: 2; height: 35%; }
 .bar-background .bar:nth-child(2) { --i: 2; height: 25%; }
 .bar-background .bar:nth-child(3) { --i: 3; height: 40%; }
 .bar-background .bar:nth-child(4) { --i: 4; height: 30%; }
@@ -91,7 +87,7 @@ body {
   }
 }
 
-/* Caixa principal */
+
 .container {
   position: center;
   z-index: 1;
