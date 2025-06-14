@@ -10,7 +10,7 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Corpo centralizado e com scroll */
+
 body {
   font-family: 'Lexend', sans-serif;
   background-color: rgba(0, 70, 30, 0.9);
@@ -24,7 +24,6 @@ body {
   position: relative;
 }
 
-/* Gráfico de barras no fundo */
 .bar-background {
   position: absolute;
   top: 0;
@@ -51,9 +50,8 @@ body {
 .bar6 { height: 70%; }
 .bar7 { height: 50%; }
 
-/* Caixa principal */
 .container {
-  position: relative;
+  position: center;
   z-index: 1;
   display: flex;
   flex-direction: column;
