@@ -38,12 +38,8 @@ body {
 }
 
 .bar-background .bar {
-  width: 6px;
-  background-color: rgba(0, 255, 100, 0.08);
-  border-radius: 3px;
-  animation: pulseBar 4s ease-in-out infinite;
-  animation-delay: calc(var(--i) * 0.1s);
-  transform-origin: bottom;
+  background-color: rgba(255, 255, 0, 0.5) !important;
+  height: 50% !important;
 }
 
 .bar-background .bar:nth-child(1) { --i: 2; height: 35%; }
@@ -77,7 +73,7 @@ body {
 .bar-background .bar:nth-child(29) { --i: 29; height: 30%; }
 .bar-background .bar:nth-child(30) { --i: 30; height: 48%; }
 
- pulseBar {
+ @keyframes pulseBar {
   0%, 100% {
     transform: scaleY(1);
   }
