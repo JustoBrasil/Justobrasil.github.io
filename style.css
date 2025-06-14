@@ -10,10 +10,9 @@ html, body {
   overflow-x: hidden;
 }
 
-
 body {
   font-family: 'Lexend', sans-serif;
-  background-color: rgba(0, 70, 30, 0.9);
+  background-color: rgba(10, 70, 30, 0.9);
   color: white;
   display: flex;
   flex-direction: column;
