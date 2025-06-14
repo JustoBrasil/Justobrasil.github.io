@@ -1,65 +1,133 @@
 <style>
+ * * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Corpo centralizado e com scroll */
+body {
+  font-family: 'Lexend', sans-serif;
+  background-color: rgba(0, 70, 30, 0.9);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  position: relative;
+}
+
+/* Gráfico de barras no fundo */
 .bar-background {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 2rem;
   z-index: 0;
+  gap: 4px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   pointer-events: none;
 }
+.bar-background div {
+  flex: 1;
+  background-color: rgba(0, 90, 40, 0.15);
+  border-radius: 2px;
+  align-self: flex-end;
+}
+.bar1 { height: 20%; }
+.bar2 { height: 60%; }
+.bar3 { height: 30%; }
+.bar4 { height: 80%; }
+.bar5 { height: 40%; }
+.bar6 { height: 70%; }
+.bar7 { height: 50%; }
 
-.bar-background .bar {
-  width: 6px;
-  background-color: rgba(0, 255, 100, 0.15);
-  border-radius: 3px;
-  animation: pulseBar 4s ease-in-out infinite;
-  animation-delay: calc(var(--i) * 0.1s);
-  transform-origin: bottom;
+
+.container {
+  position: center;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  background-color: rgba(0, 70, 30, 0.9);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
+/* Logo */
+.logo {
+  margin-bottom: 1.5rem;
+}
+.logo img {
+  max-width: 200px;
+  height: auto;
+}
 
-.bar-background .bar:nth-child(1) { --i: 1; height: 35%; }
-.bar-background .bar:nth-child(2) { --i: 2; height: 25%; }
-.bar-background .bar:nth-child(3) { --i: 3; height: 40%; }
-.bar-background .bar:nth-child(4) { --i: 4; height: 30%; }
-.bar-background .bar:nth-child(5) { --i: 5; height: 60%; }
-.bar-background .bar:nth-child(6) { --i: 6; height: 35%; }
-.bar-background .bar:nth-child(7) { --i: 7; height: 50%; }
-.bar-background .bar:nth-child(8) { --i: 8; height: 70%; }
-.bar-background .bar:nth-child(9) { --i: 9; height: 20%; }
-.bar-background .bar:nth-child(10) { --i: 10; height: 45%; }
-.bar-background .bar:nth-child(11) { --i: 11; height: 38%; }
-.bar-background .bar:nth-child(12) { --i: 12; height: 65%; }
-.bar-background .bar:nth-child(13) { --i: 13; height: 30%; }
-.bar-background .bar:nth-child(14) { --i: 14; height: 75%; }
-.bar-background .bar:nth-child(15) { --i: 15; height: 25%; }
-.bar-background .bar:nth-child(16) { --i: 16; height: 50%; }
-.bar-background .bar:nth-child(17) { --i: 17; height: 42%; }
-.bar-background .bar:nth-child(18) { --i: 18; height: 68%; }
-.bar-background .bar:nth-child(19) { --i: 19; height: 35%; }
-.bar-background .bar:nth-child(20) { --i: 20; height: 60%; }
-.bar-background .bar:nth-child(21) { --i: 21; height: 30%; }
-.bar-background .bar:nth-child(22) { --i: 22; height: 55%; }
-.bar-background .bar:nth-child(23) { --i: 23; height: 45%; }
-.bar-background .bar:nth-child(24) { --i: 24; height: 70%; }
-.bar-background .bar:nth-child(25) { --i: 25; height: 25%; }
-.bar-background .bar:nth-child(26) { --i: 26; height: 50%; }
-.bar-background .bar:nth-child(27) { --i: 27; height: 38%; }
-.bar-background .bar:nth-child(28) { --i: 28; height: 62%; }
-.bar-background .bar:nth-child(29) { --i: 29; height: 30%; }
-.bar-background .bar:nth-child(30) { --i: 30; height: 48%; }
+/* Texto principal */
+.title-section,
+.cta-section {
+  margin-bottom: 1.5rem;
+}
+.title-section p,
+.main-text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.main-text {
+  font-size: 2rem;
+  font-weight: 600;
+}
 
-@keyframes pulseBar {
-  0%, 100% {
-    transform: scaleY(1);
-  }
-  50% {
-    transform: scaleY(1.4);
-  }
+/* Linha branca */
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin: 1.5rem 0;
+  opacity: 0.5;
+}
+
+/* Botão CTA */
+.cta-button {
+  margin-top: 2rem;
+}
+.cta-button a {
+  background-color: #1877F2;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Ícones sociais */
+.social-icons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.social-icons a {
+  color: white;
+  font-size: 2rem;
 }
 </style>
