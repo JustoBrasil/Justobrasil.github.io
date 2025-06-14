@@ -47,7 +47,6 @@ body {
   transform-origin: bottom;
 }
 
-/* Gera alturas e delays diferentes via CSS */
 .bar-background .bar:nth-child(n) {
   --i: 1;
 }
@@ -60,7 +59,6 @@ body {
 .bar-background .bar:nth-child(8) { --i: 8; height: 70%; }
 .bar-background .bar:nth-child(9) { --i: 9; height: 20%; }
 .bar-background .bar:nth-child(10) { --i: 10; height: 45%; }
-/* Repete variações até o 30 */
 .bar-background .bar:nth-child(11) { --i: 11; height: 38%; }
 .bar-background .bar:nth-child(12) { --i: 12; height: 65%; }
 .bar-background .bar:nth-child(13) { --i: 13; height: 30%; }
@@ -105,7 +103,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Logo */
+
 .logo {
   margin-bottom: 1.5rem;
 }
@@ -114,7 +112,7 @@ body {
   height: auto;
 }
 
-/* Texto principal */
+
 .title-section,
 .cta-section {
   margin-bottom: 1.5rem;
@@ -138,7 +136,7 @@ body {
   opacity: 0.5;
 }
 
-/* Botão CTA */
+
 .cta-button {
   margin-top: 2rem;
 }
@@ -154,7 +152,7 @@ body {
   gap: 0.5rem;
 }
 
-/* Ícones sociais */
+
 .social-icons {
   margin-top: 1.5rem;
   display: flex;
