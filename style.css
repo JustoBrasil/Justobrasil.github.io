@@ -51,10 +51,10 @@ body {
 .bar6 { height: 70%; }
 .bar7 { height: 50%; }
 
-/* Caixa principal */
+
 .container {
   position: center;
-  z-index: 1;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
