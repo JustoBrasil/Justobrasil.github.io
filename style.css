@@ -31,13 +31,13 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: start;
+  justify-content: space-between;
   align-items: flex-end;
-  gap: 8px; 
   padding: 2rem;
   z-index: 0;
+  gap: 6px;
   pointer-events: none;
-}
+} 
 
 .bar-background .bar {
   width: 12px;
