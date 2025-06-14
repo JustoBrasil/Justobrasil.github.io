@@ -130,4 +130,13 @@ body {
   color: white;
   font-size: 2rem;
 }
+
+@keyframes pulseBar {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.4);
+  }
+}
 </style>
