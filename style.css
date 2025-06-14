@@ -1,6 +1,6 @@
 <style>
-* .bar-background {
-  position: absolute;
+* *.bar-background {
+  position: center;
   top: 0;
   left: 0;
   height: 100%;
