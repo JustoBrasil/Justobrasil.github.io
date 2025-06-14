@@ -77,7 +77,7 @@ body {
 .bar-background .bar:nth-child(29) { --i: 29; height: 30%; }
 .bar-background .bar:nth-child(30) { --i: 30; height: 48%; }
 
-@keyframes pulseBar {
+ pulseBar {
   0%, 100% {
     transform: scaleY(1);
   }
