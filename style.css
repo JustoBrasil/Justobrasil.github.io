@@ -1,5 +1,5 @@
 <style>
-* * {
+ * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -129,5 +129,16 @@ body {
 .social-icons a {
   color: white;
   font-size: 2rem;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
 }
 </style>
