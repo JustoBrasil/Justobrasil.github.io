@@ -1,1 +1,117 @@
+ <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+  body {
+  font-family: 'Lexend', sans-serif;
+  background-color: rgba(0, 70, 30, 0.9);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  overflow-x: hidden;
+  flex-direction: column;
+}
 
+
+    /* Gráfico de barras no fundo */
+    .bar-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      z-index: 0;
+      gap: 4px;
+      padding: 2rem;
+    }
+    .bar-background div {
+      flex: 1;
+      background-color: rgba(0, 90, 40, 0.15);
+      border-radius: 2px;
+    }
+    .bar1 { height: 20%; align-self: flex-end; }
+    .bar2 { height: 60%; align-self: flex-end; }
+    .bar3 { height: 30%; align-self: flex-end; }
+    .bar4 { height: 80%; align-self: flex-end; }
+    .bar5 { height: 40%; align-self: flex-end; }
+    .bar6 { height: 70%; align-self: flex-end; }
+    .bar7 { height: 50%; align-self: flex-end; }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      max-width: 800px;
+      width: 100%;
+      background-color: rgba(0, 70, 30, 0.9);
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 2rem;
+      align-items: center;
+      text-align: center;
+    }
+
+    .logo {
+      margin-bottom: 1.5rem;
+    }
+
+    .logo img {
+      max-width: 200px;
+      height: auto;
+    }
+
+    .title-section,
+    .cta-section {
+      margin-bottom: 1.5rem;
+    }
+
+    .line {
+      border-top: 1px solid white;
+      margin: 1rem 0;
+    }
+
+    .title-section p,
+    .main-text {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .main-text {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .cta-button {
+      margin-top: 2rem;
+    }
+
+    .cta-button a {
+      background-color: #1877F2;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .social-icons {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 2rem;
+    }
+  </style>
