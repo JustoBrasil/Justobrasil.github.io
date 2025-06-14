@@ -24,36 +24,76 @@ body {
   position: relative;
 }
 
-/* Gráfico de barras no fundo */
 .bar-background {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: flex;
-  z-index: 0;
-  gap: 4px;
+  justify-content: space-between;
+  align-items: flex-end;
   padding: 2rem;
+  z-index: 0;
   pointer-events: none;
 }
-.bar-background div {
-  flex: 1;
-  background-color: rgba(0, 90, 40, 0.15);
-  border-radius: 2px;
-  align-self: flex-end;
+
+.bar-background .bar {
+  width: 6px;
+  background-color: rgba(0, 255, 100, 0.08);
+  border-radius: 3px;
+  animation: pulseBar 4s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.1s);
+  transform-origin: bottom;
 }
-.bar1 { height: 20%; }
-.bar2 { height: 60%; }
-.bar3 { height: 30%; }
-.bar4 { height: 80%; }
-.bar5 { height: 40%; }
-.bar6 { height: 70%; }
-.bar7 { height: 50%; }
+
+/* Gera alturas e delays diferentes via CSS */
+.bar-background .bar:nth-child(n) {
+  --i: 1;
+}
+.bar-background .bar:nth-child(2) { --i: 2; height: 25%; }
+.bar-background .bar:nth-child(3) { --i: 3; height: 40%; }
+.bar-background .bar:nth-child(4) { --i: 4; height: 30%; }
+.bar-background .bar:nth-child(5) { --i: 5; height: 60%; }
+.bar-background .bar:nth-child(6) { --i: 6; height: 35%; }
+.bar-background .bar:nth-child(7) { --i: 7; height: 50%; }
+.bar-background .bar:nth-child(8) { --i: 8; height: 70%; }
+.bar-background .bar:nth-child(9) { --i: 9; height: 20%; }
+.bar-background .bar:nth-child(10) { --i: 10; height: 45%; }
+/* Repete variações até o 30 */
+.bar-background .bar:nth-child(11) { --i: 11; height: 38%; }
+.bar-background .bar:nth-child(12) { --i: 12; height: 65%; }
+.bar-background .bar:nth-child(13) { --i: 13; height: 30%; }
+.bar-background .bar:nth-child(14) { --i: 14; height: 75%; }
+.bar-background .bar:nth-child(15) { --i: 15; height: 25%; }
+.bar-background .bar:nth-child(16) { --i: 16; height: 50%; }
+.bar-background .bar:nth-child(17) { --i: 17; height: 42%; }
+.bar-background .bar:nth-child(18) { --i: 18; height: 68%; }
+.bar-background .bar:nth-child(19) { --i: 19; height: 35%; }
+.bar-background .bar:nth-child(20) { --i: 20; height: 60%; }
+.bar-background .bar:nth-child(21) { --i: 21; height: 30%; }
+.bar-background .bar:nth-child(22) { --i: 22; height: 55%; }
+.bar-background .bar:nth-child(23) { --i: 23; height: 45%; }
+.bar-background .bar:nth-child(24) { --i: 24; height: 70%; }
+.bar-background .bar:nth-child(25) { --i: 25; height: 25%; }
+.bar-background .bar:nth-child(26) { --i: 26; height: 50%; }
+.bar-background .bar:nth-child(27) { --i: 27; height: 38%; }
+.bar-background .bar:nth-child(28) { --i: 28; height: 62%; }
+.bar-background .bar:nth-child(29) { --i: 29; height: 30%; }
+.bar-background .bar:nth-child(30) { --i: 30; height: 48%; }
+
+@keyframes pulseBar {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.4);
+  }
+}
 
 /* Caixa principal */
 .container {
-  position: relative;
+  position: center;
   z-index: 1;
   display: flex;
   flex-direction: column;
